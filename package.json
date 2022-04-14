@@ -1,0 +1,23 @@
+{
+  "name": "1secmail",
+  "version": "1.0.0",
+  "description": "A Node API for 1secmail.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "temp",
+    "temporary",
+    "mail",
+    "email",
+    "temp mail",
+    "tempmailo",
+    "api",
+    "1secmail",
+    "1 sec mail",
+    "1 sec"
+  ],
+  "author": "LuisAFK",
+  "license": "ISC"
+}
