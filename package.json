@@ -1,5 +1,5 @@
 {
-  "name": "1secmail",
+  "name": "1secmail-api",
   "version": "1.0.0",
   "description": "A Node API for 1secmail.com",
   "main": "index.js",
