@@ -54,6 +54,17 @@ class TempMail
       this.onready = callback;
   }
 
+  async getRandomAddress(count=1)
+  {
+    let resp = await req(`https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=${count}`);
+
+    let addresses = resp.data.map(address => {
+      return address.split('@').slice(0, 2);
+    });
+
+    return addresses;
+  }
+
   async getDomains()
   {
     return (await req('https://www.1secmail.com/api/v1/?action=getDomainList')).data;

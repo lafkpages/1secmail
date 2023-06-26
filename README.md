@@ -5,7 +5,7 @@ A NodeJS API for [1secmail.com](https://1secmail.com)
 ## Examples and usage
 
 The below example creates an email account at `exampleAccount@1secmail.com` and fetches emails every 10 seconds.
-``` nodejs
+``` javascript
 const { TempMail } = require('1secmail-api');
 
 // Create email account
@@ -36,9 +36,15 @@ mail.onReady(() => {
 
 You can also chose different domains by passing an extra argument to the `TempMail` constructor:
 
-``` nodejs
+``` javascript
 // john@esiix.com
 const mail = new TempMail('john', 'esiix.com');
+```
+
+To generate random email addresses use `mail`
+
+``` javascript
+mail.getRandomAddress()
 ```
 
 To download an attachment use `mail.getAttachment(id, file)` and pass the email ID and the file name.
