@@ -54,7 +54,7 @@ class TempMail
       this.onready = callback;
   }
 
-  async getRandomAddress(count=1)
+  static async getRandomAddress(count=1)
   {
     let resp = await req(`https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=${count}`);
 
