@@ -1,5 +1,5 @@
 const req = require('./req');
-const { TempMail } = require('./index');
+const { TempMail } = require('.');
 
 
 const mail = new TempMail('testScript');
