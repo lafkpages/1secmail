@@ -1,17 +1,15 @@
-const req = require('./req');
-const { TempMail } = require('.');
+const req = require("./req");
+const { TempMail } = require(".");
 
-
-const mail = new TempMail('testScript');
+const mail = new TempMail("testScript");
 
 mail.autoFetch();
 
 mail.onReady(() => {
-  console.log('Email ready! Address:', mail.address);
+  console.log("Email ready! Address:", mail.address);
 
   const fetch = () => {
-    mail.getMail()
-    .then(mails => {
+    mail.getMail().then((mails) => {
       console.log(mails);
 
       mail.deleteMail();

@@ -7,3 +7,4 @@ node_modules
 replit.nix
 
 test.js
+.prettierignore
