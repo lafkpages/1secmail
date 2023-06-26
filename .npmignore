@@ -5,3 +5,5 @@ node_modules
 
 .replit
 replit.nix
+
+test.js
